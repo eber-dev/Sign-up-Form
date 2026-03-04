@@ -118,17 +118,28 @@ input {
     font-size: 18px;
     height: 30px;
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 8px;
+}
+
+input:user-invalid {
+    border-color: red;
+}
+
+input:user-valid {
+    border-color: blue;
 }
 
 button {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
-    padding: 0.5rem;
     background-color: #596D48;
     margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-inline: 1.5rem;
+    border-radius: 8px;
 }
 
 button:hover {
