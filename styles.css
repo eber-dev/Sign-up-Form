@@ -23,6 +23,7 @@ body {
     flex-shrink: 1;
     flex-grow: 1;
     flex-basis: 0;
+    margin: 0;
 }
 
 .logo {
@@ -48,16 +49,15 @@ body {
 }
 
 .contenido {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
     flex-grow: 8;
     flex-basis: 0;
+    margin: 0;
 }
 
 .primero {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -65,6 +65,7 @@ body {
     flex-grow: 3;
     flex-shrink: 1;
     flex-basis: 0;
+    background-color: rgb(242, 237, 237);
 }
 
 p {
@@ -76,7 +77,6 @@ p {
 }
 
 .segundo {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,6 +118,8 @@ input {
     font-size: 18px;
     height: 30px;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
 }
 
 button {
@@ -127,6 +129,11 @@ button {
     padding: 0.5rem;
     background-color: #596D48;
     margin-top: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    filter: brightness(120%);
 }
 
 .no_cuenta {
